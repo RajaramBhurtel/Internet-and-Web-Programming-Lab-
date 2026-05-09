@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TU Exam Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>TU Exam Registration Form</h1>
+    <form id="registrationForm">
+        <label>Name:</label>
+        <input type="text" id="studentName">
+        <span id="nameError" class="error"></span>
+        <label>Roll Number:</label>
+        <input type="text" id="rollNumber">
+        <span id="rollError" class="error"></span>
+        <label>Email:</label>
+        <input type="text" id="email">
+        <span id="emailError" class="error"></span>
+        <label>Phone:</label>
+        <input type="text" id="phone">
+        <span id="phoneError" class="error"></span>
+        <label>Faculty:</label>
+        <select id="faculty">
+            <option value="">Select</option>
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>BSc</option>
+        </select>
+        <span id="facultyError" class="error"></span>
+        <label>
+            <input type="checkbox" id="terms"> Accept Terms
+        </label>
+        <span id="termsError" class="error"></span>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="successMessage"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>

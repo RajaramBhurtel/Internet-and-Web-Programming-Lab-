@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Ecommerce (Lab 1)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Simple Ecommerce</h1>
+    <div class="nav">
+        <button onclick="show('register')">Register</button>
+        <button onclick="show('login')">Login</button>
+        <button onclick="show('catalog')">Catalog</button>
+        <button onclick="show('cart')">Cart</button>
+    </div>
+    <div id="register" class="page">
+        <h2>Register</h2>
+        <input type="text" id="rname" placeholder="Name"><br>
+        <input type="text" id="remail" placeholder="Email"><br>
+        <input type="password" id="rpass" placeholder="Password"><br>
+        <button onclick="register()">Submit</button>
+        <p id="rmsg"></p>
+    </div>
+    <div id="login" class="page">
+        <h2>Login</h2>
+        <input type="text" id="lemail" placeholder="Email"><br>
+        <input type="password" id="lpass" placeholder="Password"><br>
+        <button onclick="login()">Login</button>
+        <p id="lmsg"></p>
+    </div>
+    <div id="catalog" class="page">
+        <h2>Products</h2>
+        <div class="container">
+            <div class="card">
+                <p>Headphones - Rs.2000</p>
+                <button onclick="add('Headphones',2000)">Add</button>
+            </div>
+            <div class="card">
+                <p>Shoes - Rs.3000</p>
+                <button onclick="add('Shoes',3000)">Add</button>
+            </div>
+            <div class="card">
+                <p>Watch - Rs.5000</p>
+                <button onclick="add('Watch',5000)">Add</button>
+            </div>
+        </div>
+    </div>
+    <div id="cart" class="page">
+        <h2>Cart</h2>
+        <ul id="cartList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
